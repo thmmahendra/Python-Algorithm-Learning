@@ -24,7 +24,7 @@ else:
     print("Odd")
 
 
-# Challenge #2
+# Challenge #3
 # Find the largest of three numbers
 
 first_num = int(input("Enter the first number:"))
@@ -40,5 +40,9 @@ elif second_num >= first_num and second_num >= third_num:
 else:
     print("Largest:", third_num)
 
+
+
+# Challenge #4
+# Create a program that asks for a person's age and determines whether they are eligible to vote.
 
 
