@@ -49,3 +49,43 @@ if age >= 18 and age <= 100:
     print("Eligible to vote")
 else:
     print("Not Eligible")
+
+# Challenge #5
+# Write a program that asks the user for a number n and calculates the sum of all numbers from 1 to n.
+
+numbers = int(input("Enter the number:"))
+
+total = 0
+
+for num in range(1, numbers + 1):
+    total = total + num
+
+print(total)
+
+# Challenge #6
+# Write a program that asks the user for a positive number n and prints the numbers from 1 to n using a while loop.
+
+numbers = int(input("Enter the positive number:"))
+
+count = 1
+
+while count <= numbers:
+    print(count)
+    count = count + 1
+
+
+# Challenge #7
+# Ask the user for a positive number n and calculate the sum from 1 to n, but this time you must use a while loop.
+
+numbers = int(input("Enter the positive number:"))
+
+count = 1
+total = 0
+
+while count <= numbers:
+    total = total + count
+    count = count + 1
+
+print(total)
+    
+

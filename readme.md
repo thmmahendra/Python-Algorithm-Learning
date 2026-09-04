@@ -4,3 +4,11 @@
 
 ### Level 1 - Python Fundamentals
 #### Variables
+#### Data Types
+#### Input/Output
+#### Operators
+#### if/elif/else
+#### for loops
+#### while loops 
+#### break/continue
+#### Basic Functions
