@@ -43,4 +43,9 @@ else:
 # Challenge #4
 # Create a program that asks for a person's age and determines whether they are eligible to vote.
 
+age = int(input("Enter your age:"))
 
+if age >= 18 and age <= 100:
+    print("Eligible to vote")
+else:
+    print("Not Eligible")
