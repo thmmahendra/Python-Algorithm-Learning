@@ -23,7 +23,6 @@ if number % 2 == 0:
 else:
     print("Odd")
 
-
 # Challenge #3
 # Find the largest of three numbers
 
@@ -87,5 +86,35 @@ while count <= numbers:
     count = count + 1
 
 print(total)
-    
+
+# Challenge #8
+# Create a program that repeatedly asks the user to enter a number.
+
+while True:
+    numbers = int(input("Enter the number:"))
+
+    if numbers == 0:
+        break
+
+    print("You entered: ", numbers)   
+
+# Challenge #9
+# Write a program that:
+    # 1. Continuously asks the user for numbers.
+    # 2. Stops when the user enters 0.
+    # 3. Counts how many nonzero numbers were entered.
+    # 4. Prints the final count after the loop.
+
+count = 0
+
+while True:
+    numbers = int(input("Enter the positive number: "))
+
+
+    if numbers == 0:
+        break
+
+    count = count + 1
+
+print("Numbers entered: ", count)
 
