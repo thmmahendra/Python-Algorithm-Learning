@@ -3,12 +3,12 @@
 #### This course is designed for beginners, helping you build your Python skills step by step while learning how to approach and solve algorithmic problems.
 
 ### Level 1 - Python Fundamentals
-    #### - Variables
-    #### - Data Types
-    #### - Input/Output
-    #### - Operators
-    #### - if/elif/else
-    #### - for loops
-    #### - while loops 
-    #### - break/continue
-    #### - Basic Functions
+        Variables
+        Data Types
+        Input/Output
+        Operators
+        if/elif/else
+        for loops
+        while loops 
+        break/continue
+        Basic Functions
