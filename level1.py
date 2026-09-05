@@ -1,6 +1,6 @@
 # Challenge #1
 # Write a Python program that asks the user to enter a number and determines whether the number is: Positive or Negative
-'''
+
 number = int(input("Enter the number:"))
 
 if number > 0:
@@ -205,7 +205,6 @@ while True:
         smallest = numbers
 
 print("Smallest Number: ", smallest)
-'''
 
 # Challenge #14
 # Write a program that
@@ -216,6 +215,28 @@ print("Smallest Number: ", smallest)
     # Calculates their average.
     # Prints the sum, count, and average after the loop.
 
+total = 0
+count = 0
 
+while True:
+    numbers = int(input("Enter the number: "))
+
+    if numbers == 0:
+        break
+
+    total = total + numbers
+    count = count + 1
+
+average = total / count
+
+print(total, count, average)
+
+# Challenge #15
+# Write a program that repeatedly accepts numbers and stops at 0.
+    # It should count:
+    # Positive numbers.
+    # Negative numbers
+    # Even numbers.
+    # Odd numbers.
 
 
