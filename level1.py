@@ -1,6 +1,6 @@
 # Challenge #1
 # Write a Python program that asks the user to enter a number and determines whether the number is: Positive or Negative
-
+'''
 number = int(input("Enter the number:"))
 
 if number > 0:
@@ -163,3 +163,59 @@ while True:
 
 print("Even number entered: ", even_count)
 print("Odd number entered: ", odd_count)
+
+# Challenge #12
+# Write a program that
+    # Continuously asks for numbers.
+    # Stops when the user enters 0.
+    # Finds the largest nonzero number entered.
+    # Prints the largest number after the loop.
+
+largest = float('-inf')
+
+while True:
+    numbers = int(input("Enter the number: "))
+
+    if numbers == 0:
+        break
+
+    if numbers > largest:
+        largest = numbers
+
+print("Largest Number: ", largest)
+
+
+# Challenge #13
+# Write a program that
+    # Continuously asks for numbers.
+    # Stops when the user enters 0.
+    # Find the smallest nonzero number.
+    # Prints it after the loop.
+    #It must work with both positive and negative numbers.
+
+smallest = float('inf')
+
+while True:
+    numbers = int(input("Enter the number: "))
+
+    if numbers == 0:
+        break
+
+    if numbers < smallest:
+        smallest = numbers
+
+print("Smallest Number: ", smallest)
+'''
+
+# Challenge #14
+# Write a program that
+    # Repeatedly asks for numbers.
+    # Stops when the user enters 0.
+    # Calculates the sum of all nonzero numbers.
+    # Counts how many numbers were entered.
+    # Calculates their average.
+    # Prints the sum, count, and average after the loop.
+
+
+
+
