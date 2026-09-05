@@ -118,3 +118,48 @@ while True:
 
 print("Numbers entered: ", count)
 
+# Challenge #10
+# Write a program that
+    # Continuously asks for numbers.
+    # Stops when the user enters 0.
+    # Counts only the even numbers entered.
+    # Prints the final count after the loop.
+
+count = 0
+
+while True:
+    numbers = int(input("Enter your number"))
+
+    if numbers == 0:
+        break
+
+    if numbers % 2 == 0:
+        count = count + 1
+
+print("Even number entered: ", count)
+
+# Challenge #11
+# Write a program that
+    # Continuously asks for numbers.
+    # Stops when the user enters 0.
+    # Counts how many even numbers were entered.
+    # Counts how many odd numbers were entered.
+    # Prints both totals after the loop.
+
+even_count = 0
+odd_count = 0
+
+while True:
+    numbers = int(input("Enter the number: "))
+
+    if numbers == 0:
+        break
+
+    if numbers % 2 == 0:
+        even_count = even_count + 1
+
+    else:
+        odd_count = odd_count + 1
+
+print("Even number entered: ", even_count)
+print("Odd number entered: ", odd_count)
