@@ -239,4 +239,63 @@ print(total, count, average)
     # Even numbers.
     # Odd numbers.
 
+positive = 0
+negative = 0
+even = 0
+odd = 0
+
+while True:
+    numbers = int(input("Enter the number: "))
+
+    if numbers == 0:
+        break
+
+    if numbers>= 0:
+        positive = positive + 1
+
+    else:
+        negative = negative + 1
+
+    if numbers % 2 == 0:
+        even = even + 1
+    
+
+    else:
+        odd = odd + 1   
+
+print(
+    "Even: ", even, 
+    "\n Odd : ", odd, 
+    "\n Positive : ", positive,
+     "\n Negative : ", negative
+    )
+
+# Challenge #16
+# Write a program that:
+
+    # Repeatedly accepts numbers.
+    # Stops at 0.
+    # Finds the largest number.
+    # Finds the smallest number.
+    # Works with negative number
+
+largest = float('-inf')
+smallest = float('inf')
+
+while True:
+    numbers = int(input("Enter the numbers: "))
+
+    if numbers == 0:
+        break
+
+    if numbers > largest:
+        largest = numbers
+
+    if numbers < smallest:
+        smallest = numbers
+
+print(
+    "Largest: ", largest, 
+    "\n Smallest: ", smallest)
+        
 
