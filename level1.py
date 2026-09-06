@@ -348,3 +348,58 @@ print(
     "Smallest: ", smallest,
     "\n Second Smallest: ", second_smallest
 )
+
+# Challenge #19
+# Write a program that:
+
+   # Continuously asks the user for numbers.
+   # Stops when 0 is entered.
+   # Then asks the user for one target number.
+   # Counts how many times that target appeared.
+   # Prints the count.
+
+numbers = []
+
+while True:
+    number = int(input("Enter the number: "))
+
+    if number == 0:
+        break
+
+    numbers.append(number)
+
+target = int(input("Enter the target number: "))
+
+count = 0
+
+for num in numbers:
+    if num == target:
+        count = count + 1
+
+print(target, "appeared :", count, "times")
+
+
+# Challenge #20
+# Create a program that asks the user for several numbers, stores them in a list, then creates a new reversed list.
+
+original_num = []
+reverse_num = []
+
+while True:
+    numbers = int(input("Enter the number: "))
+
+    if numbers == 0:
+        break
+
+    original_num.append(numbers)
+
+
+for index in range(len(original_num) - 1, 
+                   -1, 
+                   -1
+                   ):  # range(start, stop, step)
+    
+    reverse_num.append(original_num[index])
+    
+print(original_num, reverse_num)
+
