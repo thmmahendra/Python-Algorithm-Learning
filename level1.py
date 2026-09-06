@@ -322,4 +322,29 @@ print(
     "\n Second Largest: ", second_largest
 )
 
+# Challenge #18
+# Continuously accept numbers until 0, then find:
 
+    # Smallest number
+    # Second smallest number
+
+smallest = float('inf')
+second_smallest = float('inf')
+
+while True:
+    numbers = int(input("Enter the number: "))
+
+    if numbers == 0:
+        break
+
+    if numbers < smallest:
+        second_smallest = smallest
+        smallest = numbers
+
+    elif numbers < second_smallest:
+        second_smallest = numbers
+
+print(
+    "Smallest: ", smallest,
+    "\n Second Smallest: ", second_smallest
+)
