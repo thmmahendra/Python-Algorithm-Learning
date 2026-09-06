@@ -298,4 +298,28 @@ print(
     "Largest: ", largest, 
     "\n Smallest: ", smallest)
         
+# Challenge #17
+# Given numbers entered until 0, find the second largest number.
+
+largest = float('-inf')
+second_largest = float('-inf')
+
+while True:
+    numbers = int(input("Enter the number: "))
+
+    if numbers == 0:
+        break
+
+    if numbers > largest:
+        second_largest = largest
+        largest = numbers
+
+    elif numbers > second_largest:
+        second_largest = numbers
+
+print(
+    "Largest: ", largest,
+    "\n Second Largest: ", second_largest
+)
+
 
