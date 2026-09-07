@@ -1,6 +1,6 @@
 # Challenge #1
 # Write a Python program that asks the user to enter a number and determines whether the number is: Positive or Negative
-'''
+
 number = int(input("Enter the number:"))
 
 if number > 0:
@@ -430,8 +430,50 @@ found = False
 for num in numbers:
     if num == target:
         found = True
-        break
 
 print(found)
-'''
 
+# Challenge #23
+# Linear Search with break
+
+numbers = [10, 25, 7, 40, 15, 30]
+
+target = int(input("Enter the target: "))
+
+found = False
+
+for num in numbers:
+    if num == target:
+        found = True
+        break
+if found:
+    print("Found")
+
+else:
+    print("Not Found")
+
+# Challenge #24
+# Find the index/ Linear Search + Indexing
+
+numbers = [10, 25, 7, 40, 15, 30]
+
+target = int(input("Enter the target: "))
+
+found = False
+
+index = 0
+
+found_index = -1
+
+for num in numbers:
+    if num == target:
+        found = True
+        found_index = index
+        break
+
+    index = index + 1
+if found:
+    print(found_index)
+
+else:
+    print(index)
