@@ -1,6 +1,6 @@
 # Challenge #1
 # Write a Python program that asks the user to enter a number and determines whether the number is: Positive or Negative
-
+'''
 number = int(input("Enter the number:"))
 
 if number > 0:
@@ -402,4 +402,21 @@ for index in range(len(original_num) - 1,
     reverse_num.append(original_num[index])
     
 print(original_num, reverse_num)
+'''
+# Challenge #21
+# Reverse List Using while
+# Write a program yourself that you can use predefined list and build the reverse manually
+
+numbers = [10, 20, 30, 40, 50]
+
+reversed_numbers = []
+
+index = len(numbers) - 1
+
+while index >= 0:
+    reversed_numbers.append(numbers[index])
+    index = index - 1
+
+print(reversed_numbers)
+
 
