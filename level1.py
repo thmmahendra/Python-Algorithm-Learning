@@ -402,7 +402,7 @@ for index in range(len(original_num) - 1,
     reverse_num.append(original_num[index])
     
 print(original_num, reverse_num)
-'''
+
 # Challenge #21
 # Reverse List Using while
 # Write a program yourself that you can use predefined list and build the reverse manually
@@ -419,4 +419,19 @@ while index >= 0:
 
 print(reversed_numbers)
 
+# Challenge #22
+# Find the number in a list
+
+numbers = [10, 25, 7, 40, 15, 30]
+
+target = int(input("Enter the target: "))
+found = False
+
+for num in numbers:
+    if num == target:
+        found = True
+        break
+
+print(found)
+'''
 
