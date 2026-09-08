@@ -1,6 +1,6 @@
 # Challenge #1
 # Write a Python program that asks the user to enter a number and determines whether the number is: Positive or Negative
-
+'''
 number = int(input("Enter the number:"))
 
 if number > 0:
@@ -473,7 +473,39 @@ for num in numbers:
 
     index = index + 1
 if found:
-    print(found_index)
+    print("Index: ", found_index)
 
 else:
-    print(index)
+    print("Not Found")
+'''
+
+# Challenge #25
+# Count Occurrences + Find First Index
+    # Find the first index of a target.
+    # Count how many times the target appears.
+
+numbers = [10, 25, 7, 25, 40, 25, 15]
+
+target = int(input("Enter the number: "))
+count = 0
+first_index = -1
+index = 0
+
+for num in numbers:
+    if num == target:
+        count = count + 1
+
+        if first_index == -1:
+            first_index = index
+
+    index = index + 1
+
+if first_index != -1:
+    print("First Index: ", first_index,
+          "\n Occurrence", count)
+
+else:
+    print("Not Found")
+        
+
+
