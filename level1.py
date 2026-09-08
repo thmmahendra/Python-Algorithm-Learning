@@ -1,6 +1,6 @@
 # Challenge #1
 # Write a Python program that asks the user to enter a number and determines whether the number is: Positive or Negative
-'''
+
 number = int(input("Enter the number:"))
 
 if number > 0:
@@ -477,7 +477,6 @@ if found:
 
 else:
     print("Not Found")
-'''
 
 # Challenge #25
 # Count Occurrences + Find First Index
