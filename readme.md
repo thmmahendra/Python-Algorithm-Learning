@@ -12,3 +12,18 @@
         while loops 
         break/continue
         Basic Functions
+
+### Level 2 - List
+        Accessing Element
+        Updating Element
+        Adding/Removing Elements
+        Tranversing Lists
+        Finding min/max
+        Sum/Average
+        Counting
+        Searching
+        Duplicates
+        Frequency Counting
+        Second largest/smallest
+        Reversing Lists
+        Rotating Lists
