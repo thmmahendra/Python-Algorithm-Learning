@@ -1,6 +1,6 @@
 # Challenge #1
 # Write a Python program that asks the user to enter a number and determines whether the number is: Positive or Negative
-'''
+
 number = int(input("Enter the number:"))
 
 if number > 0:
@@ -506,8 +506,6 @@ if first_index != -1:
 else:
     print("Not Found")
 
-'''
-
 # Challenge #26
     # Reverse a List In Place
     # Two pointers + list swapping
@@ -524,5 +522,27 @@ while left < right:
     right = right - 1
 
 print(numbers)
-        
 
+# Challenge27
+# Check if a List is a Palindrome
+
+numbers = [1, 2, 3, 2, 1]
+
+is_palindrome = True
+
+left = 0
+right = len(numbers) - 1
+
+while left < right:
+    if numbers[left] != numbers[right]:
+        is_palindrome = False
+        break
+
+    left = left + 1
+    right = right - 1
+
+if is_palindrome:
+    print("Palindrome")
+
+else:
+    print("Not Palindrome")
