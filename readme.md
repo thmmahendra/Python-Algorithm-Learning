@@ -27,3 +27,13 @@
         Second largest/smallest
         Reversing Lists
         Rotating Lists
+
+### Level 3 - Strings
+        Character Traversal
+        Counting Character
+        Reversing Strings
+        Palindromes
+        Anagrams
+        Duplicate Characters
+        Word Frequency
+        
