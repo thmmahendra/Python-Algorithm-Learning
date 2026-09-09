@@ -1,6 +1,6 @@
 # Challenge #1
 # Write a Python program that asks the user to enter a number and determines whether the number is: Positive or Negative
-
+'''
 number = int(input("Enter the number:"))
 
 if number > 0:
@@ -505,6 +505,24 @@ if first_index != -1:
 
 else:
     print("Not Found")
-        
 
+'''
+
+# Challenge #26
+    # Reverse a List In Place
+    # Two pointers + list swapping
+
+numbers = [10, 20, 30, 40, 50]
+
+right = len(numbers) - 1
+left = 0
+
+while left < right:
+    numbers[left], numbers[right] = numbers[right], numbers[left]
+
+    left = left + 1
+    right = right - 1
+
+print(numbers)
+        
 
