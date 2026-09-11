@@ -37,7 +37,7 @@ for char in words:
 
 print(character, "appeared: ", char_count, "times")
 
-'''
+
 # Challenge #3
 # Reverse String
 # Create a program that:
@@ -61,6 +61,20 @@ while index >= 0:
     index = index - 1
 
 print(reversed_words)
+
+'''
+# Challenge #4
+# Write a program that asks the user for a word or sentence and counts how many vowels it contains.
+
+words = input("Enter the words: ")
+
+char_count = 0
+
+for char in words:
+    if char == "a" or char == "e" or char == "i" or char == "o" or char == "u":
+        char_count = char_count + 1
+
+print("Vowels: ", char_count)
 
 
 
