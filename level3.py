@@ -5,7 +5,7 @@
     # Traverses the string.
     # Counts the characters manually.
     # Prints the final count.
-'''
+
 words = input("Enter the words: ")
 
 char_count = 0
@@ -62,7 +62,6 @@ while index >= 0:
 
 print(reversed_words)
 
-'''
 # Challenge #4
 # Write a program that asks the user for a word or sentence and counts how many vowels it contains.
 
