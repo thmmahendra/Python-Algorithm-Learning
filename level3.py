@@ -87,7 +87,6 @@ for char in words:
             char_count = char_count + 1
 
 print("Consonants Count: ", char_count)
-'''
 
 # Challenge #6
 # Count Vowels and Consonants
@@ -108,7 +107,26 @@ for char in words:
 
 print("Vowels count: ", vowels_count)
 print("Consonants Counts: ", consonants_count)
+'''
+# Challenge #7
+# Count how many words it contains
 
+words = input("Enter the words: ")
+
+word_count = 0
+in_word = False
+
+for char in words:
+    if char.isalpha():
+
+        if not in_word:
+            word_count = word_count + 1
+            in_word = True
+
+    else:
+        in_word = False
+
+print(word_count)
     
 
 
