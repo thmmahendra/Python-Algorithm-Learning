@@ -5,7 +5,7 @@
     # Traverses the string.
     # Counts the characters manually.
     # Prints the final count.
-
+'''
 words = input("Enter the words: ")
 
 char_count = 0
@@ -75,7 +75,19 @@ for char in words:
 
 print("Vowels: ", char_count)
 
+'''
+# Challenge #5
+# Count Consonants
 
+words = input("Enter the words: ")
+
+char_count = 0
+
+for char in words:
+    if char.isalpha() and char != "a" and char != "e" and char != "i" and char != "o" and char != "u":
+            char_count = char_count + 1
+
+print("Consonants Count: ", char_count)
 
 
 
