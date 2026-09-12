@@ -5,7 +5,7 @@
     # Traverses the string.
     # Counts the characters manually.
     # Prints the final count.
-'''
+
 words = input("Enter the words: ")
 
 char_count = 0
@@ -107,7 +107,7 @@ for char in words:
 
 print("Vowels count: ", vowels_count)
 print("Consonants Counts: ", consonants_count)
-'''
+
 # Challenge #7
 # Count how many words it contains
 
@@ -127,6 +127,29 @@ for char in words:
         in_word = False
 
 print(word_count)
-    
+
+# Challenge #8
+# Find the longest word
+
+words = input("Enter the words: ")
+
+current_word = ""
+longest_word = ""
+
+for char in words:
+
+    if char.isalpha():
+        current_word = current_word + char
+
+    else:
+        if len(current_word) > len(longest_word):
+            longest_word = current_word
+
+        current_word = ""
+
+if len(current_word) > len(longest_word):
+    longest_word = current_word
+
+print("Longest Words: ", longest_word)
 
 
