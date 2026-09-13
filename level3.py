@@ -5,7 +5,7 @@
     # Traverses the string.
     # Counts the characters manually.
     # Prints the final count.
-
+'''
 words = input("Enter the words: ")
 
 char_count = 0
@@ -151,5 +151,47 @@ if len(current_word) > len(longest_word):
     longest_word = current_word
 
 print("Longest Words: ", longest_word)
+'''
+
+# Challenge #9
+# Reverse each word
+
+words = input("Enter the words: ")
+
+current_word = ""
+reversed_word = ""
+result = ""
+
+for char in words:
+
+    if char.isalpha():
+        current_word = current_word + char
+
+    else:
+        index = len(current_word) - 1
+
+        while index >= 0:
+            reversed_word = reversed_word + current_word[index]
+            index = index - 1
+
+        
+        result = result + reversed_word + char          
+          
+        current_word = ""
+        reversed_word = ""  
+
+
+index = len(current_word) - 1
+
+while index >= 0:
+    reversed_word = reversed_word + current_word[index]
+    index = index - 1
+
+        
+result = result + reversed_word 
+
+print("Output: ", result)
+
+    
 
 
