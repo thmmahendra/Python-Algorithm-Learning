@@ -5,7 +5,7 @@
     # Traverses the string.
     # Counts the characters manually.
     # Prints the final count.
-'''
+
 words = input("Enter the words: ")
 
 char_count = 0
@@ -246,7 +246,6 @@ if len(current_word) > 3:
     count = count + 1
             
 print("Output: ", count)
-'''
 
 # Challenge #12
 # Count short words
@@ -271,7 +270,31 @@ if len(short_word) < 4:
 
 print("Output: ", short_count)
 
+# Challenge #13
+# Find the shortest word
 
+words = input("Enter the words: ")
+
+current_word = ""
+shortest_word = ""
+
+for char in words:
+    if char.isalpha():
+        current_word = current_word + char
+
+    else:
+        if shortest_word == "":
+            shortest_word = current_word
+
+        elif len(current_word) < len(shortest_word):
+            shortest_word = current_word
+
+        current_word = ""
+
+if current_word != "" and len(current_word) < len(shortest_word):
+    shortest_word = current_word
+
+print("Shortest words :", shortest_word)
 
 
 
