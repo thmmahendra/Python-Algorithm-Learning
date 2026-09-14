@@ -223,7 +223,6 @@ while index >= 0:
     index = index - 1
 
 print("Output: ", reversed_word)
-'''
 
 # Challenge #11
 # Counts words by lengths
@@ -247,8 +246,30 @@ if len(current_word) > 3:
     count = count + 1
             
 print("Output: ", count)
+'''
 
+# Challenge #12
+# Count short words
 
+words = input("Enter the words: ")
+
+short_count = 0
+short_word = ""
+
+for char in words:
+    if char.isalpha():
+        short_word = short_word + char
+
+    else:
+        if len(short_word) < 4:
+            short_count = short_count + 1
+
+        short_word = ""
+
+if len(short_word) < 4:
+    short_count = short_count + 1
+
+print("Output: ", short_count)
 
 
 
