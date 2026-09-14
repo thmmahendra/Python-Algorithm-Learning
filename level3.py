@@ -236,11 +236,15 @@ current_word = ""
 for char in words:
     if char.isalpha():
         current_word = current_word + char
-        
 
+    else:
         if len(current_word) > 3:
             count = count + 1
-            current_word = ""
+
+        current_word = ""
+
+if len(current_word) > 3:
+    count = count + 1
             
 print("Output: ", count)
 
