@@ -5,7 +5,7 @@
     # Traverses the string.
     # Counts the characters manually.
     # Prints the final count.
-
+'''
 words = input("Enter the words: ")
 
 char_count = 0
@@ -223,6 +223,29 @@ while index >= 0:
     index = index - 1
 
 print("Output: ", reversed_word)
+'''
+
+# Challenge #11
+# Counts words by lengths
+
+words = input("Enter the words: ")
+
+count = 0
+current_word = ""
+
+for char in words:
+    if char.isalpha():
+        current_word = current_word + char
+        
+
+        if len(current_word) > 3:
+            count = count + 1
+            current_word = ""
+            
+print("Output: ", count)
+
+
+
 
 
 
