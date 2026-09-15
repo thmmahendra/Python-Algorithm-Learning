@@ -5,7 +5,7 @@
     # Traverses the string.
     # Counts the characters manually.
     # Prints the final count.
-
+'''
 words = input("Enter the words: ")
 
 char_count = 0
@@ -295,8 +295,30 @@ if current_word != "" and len(current_word) < len(shortest_word):
     shortest_word = current_word
 
 print("Shortest words :", shortest_word)
+'''
 
+# Challenge #14
+# Find the Longest Word Length
 
+words = input("Enter the words: ")
+
+current_word = ""
+longest_length = 0
+
+for char in words:
+    if char.isalpha():
+        current_word = current_word + char
+
+    else:
+        if len(current_word) > longest_length:
+            longest_length = len(current_word) 
+
+        current_word = ""
+
+if len(current_word) > longest_length:
+    longest_length = len(current_word)
+
+print("Output: ", longest_length)
 
     
 
