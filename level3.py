@@ -295,7 +295,6 @@ if current_word != "" and len(current_word) < len(shortest_word):
     shortest_word = current_word
 
 print("Shortest words :", shortest_word)
-'''
 
 # Challenge #14
 # Find the Longest Word Length
@@ -319,7 +318,33 @@ if len(current_word) > longest_length:
     longest_length = len(current_word)
 
 print("Output: ", longest_length)
+'''
 
+# Challenge #15
+# Count words starting with a specific letter
+
+words = input("Enter the words: ")
+target = input("Enter the targeted word: ")
+
+current_word = ""
+count = 0
+
+for char in words:
+    if char.isalpha():
+        current_word = current_word + char
+        
+    else:
+        if current_word != "":
+            if current_word[0].lower() == target.lower():
+                count = count + 1
+
+            current_word = ""
+
+if current_word != "":
+    if current_word[0].lower() == target.lower():
+        count = count + 1
+
+print("Output: ", count)
     
 
 
