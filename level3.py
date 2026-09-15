@@ -5,7 +5,7 @@
     # Traverses the string.
     # Counts the characters manually.
     # Prints the final count.
-'''
+
 words = input("Enter the words: ")
 
 char_count = 0
@@ -344,7 +344,6 @@ if current_word != "":
         count = count + 1
 
 print("Output: ", count)
-'''
 
 # Challenge #16
 # Count words ending with a specific lettwer
