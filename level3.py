@@ -375,26 +375,19 @@ print("Output: ", count)
 # Challenge #17
 # Count words with repeated characters
 
-words = input("Enter the words: ")
-target = input("Enter the target letter: ")
+current_word = input("Enter the words: ")
+seen = ""
+has_repeat = False
 
-current_word = ""
-count = 0
-
-for char in words:
-    if char.isalpha():
-        current_word = current_word + char
+for letter in current_word:
+    if letter in seen:
+        has_repeat = True
+        break
 
     else:
-        if current_word[len(current_word)].lower() == target.lower():
-            count = count + 1
-
-        current_word = ""
-
-if current_word[len(current_word)].lower() == target.lower():
-    count = count + 1
-
-print("Output: ", count)
+        seen = seen + letter
+    
+print("Output: ", has_repeat)
 
 
 
