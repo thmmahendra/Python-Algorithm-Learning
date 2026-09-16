@@ -370,10 +370,11 @@ if current_word != "":
         count = count + 1
 
 print("Output: ", count)
-'''
 
 # Challenge #17
 # Count words with repeated characters
+    # Part #1 
+    # Duplicate Detection
 
 current_word = input("Enter the words: ")
 seen = ""
@@ -387,7 +388,25 @@ for letter in current_word:
     else:
         seen = seen + letter
     
-print("Output: ", has_repeat)
+print("Output: ", has_repeat) 
+'''
+    # Part #2
+    # Combine and count the repeated characters
+
+current_word = input("Enter the words: ")
+seen = ""
+has_repeat = False
+
+for letter in current_word:
+    if letter in seen:
+        has_repeat = True
+        break
+
+    else:
+        seen = seen + letter
+    
+print("Output: ", has_repeat) 
+
 
 
 
