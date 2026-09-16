@@ -5,7 +5,7 @@
     # Traverses the string.
     # Counts the characters manually.
     # Prints the final count.
-
+'''
 words = input("Enter the words: ")
 
 char_count = 0
@@ -370,5 +370,31 @@ if current_word != "":
         count = count + 1
 
 print("Output: ", count)
+'''
+
+# Challenge #17
+# Count words with repeated characters
+
+words = input("Enter the words: ")
+target = input("Enter the target letter: ")
+
+current_word = ""
+count = 0
+
+for char in words:
+    if char.isalpha():
+        current_word = current_word + char
+
+    else:
+        if current_word[len(current_word)].lower() == target.lower():
+            count = count + 1
+
+        current_word = ""
+
+if current_word[len(current_word)].lower() == target.lower():
+    count = count + 1
+
+print("Output: ", count)
+
 
 
