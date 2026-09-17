@@ -389,7 +389,7 @@ for letter in current_word:
         seen = seen + letter
     
 print("Output: ", has_repeat) 
-'''
+
     # Part #2
     # Combine and count the repeated characters
 
@@ -427,6 +427,31 @@ if current_word != "":
                seen = seen + letter
 
 print("Output: ", count) 
+'''
+# Challenge #18
+# Find the first repeated character
+
+current_word = input("Enter the words: ")
+
+seen = ""
+repeat_char = ""
+
+for letter in current_word:
+    if letter in seen:
+        repeat_char = letter
+        break
+
+    else:
+        seen = seen + letter
+
+if repeat_char != "":
+    print("Output: ", repeat_char)
+
+else:
+    print("No repeated character")
+
+
+
 
 
 
