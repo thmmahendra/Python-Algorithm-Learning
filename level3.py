@@ -393,19 +393,40 @@ print("Output: ", has_repeat)
     # Part #2
     # Combine and count the repeated characters
 
-current_word = input("Enter the words: ")
-seen = ""
-has_repeat = False
+words = input("Enter the words: ")
 
-for letter in current_word:
-    if letter in seen:
-        has_repeat = True
-        break
+current_word = ""
+count = 0
+
+for char in words:
+    if char.isalpha():
+        current_word = current_word + char
 
     else:
-        seen = seen + letter
-    
-print("Output: ", has_repeat) 
+        if current_word != "":
+            seen = ""
+
+            for letter in current_word:
+                if letter in seen:
+                    count = count + 1
+                    break
+
+                else:
+                    seen = seen + letter
+
+            current_word = ""
+
+if current_word != "":
+     seen = ""
+
+     for letter in current_word:
+          if letter in seen:
+               count = count + 1
+               break
+          else:
+               seen = seen + letter
+
+print("Output: ", count) 
 
 
 
