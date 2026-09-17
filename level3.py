@@ -5,7 +5,7 @@
     # Traverses the string.
     # Counts the characters manually.
     # Prints the final count.
-'''
+
 words = input("Enter the words: ")
 
 char_count = 0
@@ -427,7 +427,7 @@ if current_word != "":
                seen = seen + letter
 
 print("Output: ", count) 
-'''
+
 # Challenge #18
 # Find the first repeated character
 
@@ -449,6 +449,8 @@ if repeat_char != "":
 
 else:
     print("No repeated character")
+
+
 
 
 
