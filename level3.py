@@ -449,7 +449,7 @@ if repeat_char != "":
 
 else:
     print("No repeated character")
-'''
+
 # Challenge #19
 # Find the first non repeated character
 
@@ -473,6 +473,35 @@ if unique_char != "":
 
 else:
     print("No unique character")
+'''
+
+# Challenge #20
+# Find the most frequent character
+
+current_word = input("Enter the words: ")
+
+most_char = ""
+most_count = 0
+
+for letter in current_word:
+    count = 0
+
+    for check in current_word:
+        if letter == check:
+            count = count + 1
+
+    if count > most_count:
+        most_count = count
+        most_char = letter
+        
+
+if most_char != "":
+    print("Output: ", most_char)
+
+else:
+    print("No most character found.")
+
+
 
 
 
