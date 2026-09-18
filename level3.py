@@ -5,7 +5,7 @@
     # Traverses the string.
     # Counts the characters manually.
     # Prints the final count.
-
+'''
 words = input("Enter the words: ")
 
 char_count = 0
@@ -449,7 +449,30 @@ if repeat_char != "":
 
 else:
     print("No repeated character")
+'''
+# Challenge #19
+# Find the first non repeated character
 
+current_word = input("Enter the word: ")
+
+unique_char = ""
+
+for letter in current_word:
+    count = 0
+
+    for check in current_word:
+        if letter == check:
+            count = count + 1
+
+    if count == 1:
+        unique_char = letter
+        break
+
+if unique_char != "":
+    print("Output: ", unique_char)
+
+else:
+    print("No unique character")
 
 
 
