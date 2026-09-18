@@ -5,7 +5,7 @@
     # Traverses the string.
     # Counts the characters manually.
     # Prints the final count.
-'''
+
 words = input("Enter the words: ")
 
 char_count = 0
@@ -473,7 +473,6 @@ if unique_char != "":
 
 else:
     print("No unique character")
-'''
 
 # Challenge #20
 # Find the most frequent character
@@ -500,6 +499,31 @@ if most_char != "":
 
 else:
     print("No most character found.")
+
+# Challenge #21
+# Find the least frequent character
+
+current_word = input("Enter the words: ")
+
+least_char = ""
+least_count = float('inf')
+
+for letter in current_word:
+    count = 0
+
+    for check in current_word:
+        if letter == check:
+            count = count + 1
+
+    if count < least_count:
+        least_count = count
+        least_char = letter
+
+if least_char != "":
+    print("Output: ", least_char)
+
+else:
+    print("No least character found")
 
 
 
