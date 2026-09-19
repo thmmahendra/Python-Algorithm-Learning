@@ -5,7 +5,7 @@
     # Traverses the string.
     # Counts the characters manually.
     # Prints the final count.
-'''
+
 words = input("Enter the words: ")
 
 char_count = 0
@@ -524,7 +524,6 @@ if least_char != "":
 
 else:
     print("No least character found")
-'''
 
 # Challenge #22
 # Write a program that check if a string is a Palindrome
@@ -550,6 +549,48 @@ if is_palindrome:
 
 else:
     print("Not Palindrome")
+
+# Challenge #23 
+# Anagram Checker
+    # Two words are anagrams when they contain the same characters with the same frequency, but possibly in a different order
+
+first_words = input("Enter the words: ").lower()
+second_words = input("Enter the words: ").lower()
+
+
+if len(first_words) != len(second_words):
+    are_anagrams = False
+
+else:
+    are_anagrams = True
+
+    for character in first_words:
+        count_first = 0
+        count_second = 0
+
+        for check in first_words:
+            if character == check:
+                count_first = count_first + 1
+
+        for check in second_words:
+            if character == check:
+                count_second = count_second + 1
+
+        if count_first != count_second:
+            are_anagrams = False
+            break
+
+if are_anagrams:
+    print("Anagrams")
+
+else:
+    print("Not Anagrams")
+
+
+
+
+
+
 
 
 
