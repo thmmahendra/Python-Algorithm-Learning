@@ -5,7 +5,7 @@
     # Traverses the string.
     # Counts the characters manually.
     # Prints the final count.
-
+'''
 words = input("Enter the words: ")
 
 char_count = 0
@@ -524,6 +524,33 @@ if least_char != "":
 
 else:
     print("No least character found")
+'''
+
+# Challenge #22
+# Write a program that check if a string is a Palindrome
+
+current_word = input("Enter the word: ").lower()
+
+is_palindrome = True
+
+left = 0
+right = len(current_word) - 1
+
+
+while left < right:
+    if current_word[left] != current_word[right]:
+        is_palindrome = False
+        break
+
+    left = left + 1
+    right = right - 1
+
+if is_palindrome:
+    print("Palindrome")
+
+else:
+    print("Not Palindrome")
+
 
 
 
