@@ -594,15 +594,14 @@ sentence = input("Enter a sentence: ").lower()
 
 words = sentence.split()
 
-for character in sentence:
+for word in words:
     count = 0
 
-    for check in sentence:
+    for check in words:
         if words == check:
             count = count + 1
-            break
-        
-print("Output: ", words)
+
+    print(word, count)
 
 
 
