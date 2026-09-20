@@ -585,7 +585,6 @@ if are_anagrams:
 
 else:
     print("Not Anagrams")
-'''
 
 # Challenge #24 Word Frequency
 # Count how many times each word appears
@@ -593,15 +592,23 @@ else:
 sentence = input("Enter a sentence: ").lower()
 
 words = sentence.split()
+checked_words = []
 
 for word in words:
-    count = 0
+    if word not in checked_words:
+        count = 0
 
-    for check in words:
-        if words == check:
-            count = count + 1
+        for check in words:
+            if word == check:
+                count = count + 1
 
-    print(word, count)
+        print(word, count)
+
+        checked_words.append(word)
+'''
+
+
+
 
 
 
