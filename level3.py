@@ -5,7 +5,7 @@
     # Traverses the string.
     # Counts the characters manually.
     # Prints the final count.
-
+'''
 words = input("Enter the words: ")
 
 char_count = 0
@@ -585,6 +585,26 @@ if are_anagrams:
 
 else:
     print("Not Anagrams")
+'''
+
+# Challenge #24 Word Frequency
+# Count how many times each word appears
+
+sentence = input("Enter a sentence: ").lower()
+
+words = sentence.split()
+
+for character in sentence:
+    count = 0
+
+    for check in sentence:
+        if words == check:
+            count = count + 1
+            break
+        
+print("Output: ", words)
+
+
 
 
 
