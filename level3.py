@@ -605,7 +605,6 @@ for word in words:
         print(word, count)
 
         checked_words.append(word)
-'''
 
 # Challenge #25
 # Most frequent words
@@ -633,6 +632,7 @@ for word in words:
 
 print("Most Frequent Words: ", frequent_word)
 print("Frequency: ", highest_count)
+'''
 
 
 
