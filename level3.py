@@ -607,6 +607,36 @@ for word in words:
         checked_words.append(word)
 '''
 
+# Challenge #25
+# Most frequent words
+
+sentence = input("Enter a sentence: ").lower()
+
+words = sentence.split()
+checked_words = []
+frequent_word = ""
+highest_count = 0
+
+
+for word in words:
+    if word not in checked_words:
+        count = 0
+
+        for check in words:
+            if word == check:
+                count = count + 1
+        if count > highest_count:
+            highest_count = count
+            frequent_word = word
+
+        checked_words.append(word)
+
+print("Most Frequent Words: ", frequent_word)
+print("Frequency: ", highest_count)
+
+
+
+
 
 
 
