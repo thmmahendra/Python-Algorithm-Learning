@@ -634,7 +634,33 @@ print("Most Frequent Words: ", frequent_word)
 print("Frequency: ", highest_count)
 '''
 
+# Challenge #26
+# Least frequent words
 
+sentence = input("Enter a sentence: ").lower()
+
+words = sentence.split()
+checked_words = []
+
+least_frequent_word = ""
+least_count = float('inf')
+
+for word in words:
+    if word not in checked_words:
+        count = 0
+
+        for check in words:
+            if word == check:
+                count = count + 1
+
+        if count < least_count:
+            least_count = count
+            least_frequent_word = word
+
+        checked_words.append(word)
+
+print("Least Frequent Words: ", least_frequent_word)
+print("Frequency: ", least_count)
 
 
 
