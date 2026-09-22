@@ -5,7 +5,7 @@
     # Traverses the string.
     # Counts the characters manually.
     # Prints the final count.
-'''
+
 words = input("Enter the words: ")
 
 char_count = 0
@@ -715,7 +715,6 @@ if first_repeating == "":
 
 else:
      print("First Repeating Word: ", first_repeating)
-'''
 
 # Challenge #29
 # Print All Repeating Words
@@ -745,7 +744,34 @@ for word in words:
 if found_repeating == False:
     print("No Repeating words.")
 
-    
+
+# Challenge #30
+# Print all non repeating words
+
+sentence = input("Enter a sentence: ").lower()
+
+words = sentence.split()
+
+checked_words = []
+
+found_non_repeating = False
+
+for word in words:
+    if word not in checked_words:
+        count = 0
+
+        for check in words:
+            if word == check:
+                count = count + 1
+
+        if count == 1:
+            print(word)
+            found_non_repeating = True
+
+        checked_words.append(word)
+
+if found_non_repeating == False:
+    print("No Non-Repeating words.")
 
 
 
