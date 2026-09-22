@@ -661,7 +661,7 @@ for word in words:
 
 print("Least Frequent Words: ", least_frequent_word)
 print("Frequency: ", least_count)
-'''
+
 
 # Challenge #27
 # First Non Repeating Word 
@@ -688,6 +688,36 @@ if first_non_repeating == "":
 
 else:
     print("First Non Repeating Word: ", first_non_repeating)
+'''
+
+# Challenge #28
+# First Repeating Word
+
+sentence = input("Enter a sentence: ").lower()
+
+words = sentence.split()
+
+first_repeating = ""
+
+for word in words:
+    count = 0
+
+    for check in words:
+        if word == check:
+            count = count + 1
+
+    if count > 1:
+        first_repeating = word
+        break
+   
+if first_repeating == "":
+     print("No first repeating word")
+
+else:
+     print("First Repeating Word: ", first_repeating)
+
+    
+
 
 
 
