@@ -666,7 +666,7 @@ print("Frequency: ", least_count)
 # Challenge #27
 # First Non Repeating Word 
 
-sentence = input("Enter a sentenct: ").lower()
+sentence = input("Enter a sentence: ").lower()
 
 words = sentence.split()
 
@@ -683,7 +683,11 @@ for word in words:
         first_non_repeating = word
         break
 
-print("First Non repeating Word: ",first_non_repeating)
+if first_non_repeating == "":
+    print("No non-repeating word")
+
+else:
+    print("First Non Repeating Word: ", first_non_repeating)
 
 
 
