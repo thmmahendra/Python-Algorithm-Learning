@@ -688,7 +688,7 @@ if first_non_repeating == "":
 
 else:
     print("First Non Repeating Word: ", first_non_repeating)
-'''
+
 
 # Challenge #28
 # First Repeating Word
@@ -711,10 +711,43 @@ for word in words:
         break
    
 if first_repeating == "":
-     print("No first repeating word")
+     print("No repeating word")
 
 else:
      print("First Repeating Word: ", first_repeating)
+'''
+
+# Challenge #29
+# Print All Repeating Words
+
+sentence = input("Enter a sentence: ").lower()
+
+words = sentence.split()
+
+checked_words = []
+
+found_repeating = False
+
+for word in words:
+    if word not in checked_words:
+        count = 0
+
+        for check in words:
+            if word == check:
+                count = count + 1
+
+        if count > 1:
+            print(word)
+            found_repeating = True
+
+        checked_words.append(word)
+
+if found_repeating == False:
+    print("No Repeating words.")
+
+    
+
+
 
     
 
