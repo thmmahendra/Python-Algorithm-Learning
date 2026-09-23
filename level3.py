@@ -773,6 +773,52 @@ for word in words:
 if found_non_repeating == False:
     print("No Non-Repeating words.")
 
+# Challenge #31
+# Second Most Frequent
+
+sentence = input("Enter a sentence: ").lower()
+
+words = sentence.split()
+checked_words = []
+
+most_frequent_word = ""
+second_most_frequent_word = ""
+
+highest_count = 0
+second_highest_count = 0
+
+for word in words:
+    if word not in checked_words:
+        count = 0
+
+        for check in words:
+            if word == check:
+                count = count + 1
+
+        if count > highest_count:
+            second_highest_count = highest_count
+            highest_count = count
+            second_most_frequent_word = most_frequent_word
+            most_frequent_word = word
+
+        else:
+            if count > second_highest_count and count != highest_count:
+                second_highest_count = count
+                second_most_frequent_word = word
+
+        checked_words.append(word)
+
+if second_most_frequent_word == "":
+    print("No second most frequent word.")
+
+else:
+    print("Second Most Frequent word: ", second_most_frequent_word)
+    print("Second Highest Count: ", second_highest_count)
+    
+   
+
+            
+
 
 
     
