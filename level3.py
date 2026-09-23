@@ -5,7 +5,7 @@
     # Traverses the string.
     # Counts the characters manually.
     # Prints the final count.
-'''
+
 words = input("Enter the words: ")
 
 char_count = 0
@@ -856,7 +856,6 @@ if second_least_frequent == "":
 else:
     print("Second Least frequent word: ", second_least_frequent)
     print("Second Least Count: ", second_lowest_count)
-'''
 
 # Challenge #33
 # Two most Frequent Words
