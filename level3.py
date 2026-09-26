@@ -1062,7 +1062,6 @@ if third_least_frequent_word == "":
 else:
     print("Third least frequent word: ", third_least_frequent_word)
     print("Third lowest count : ", third_lowest_count)
-'''
 
 # Challenge #37
 # Top Three Most Frequent Words
@@ -1125,8 +1124,70 @@ if third_most_frequent_word == "":
 else:
     print("Third most frequent word: ", third_most_frequent_word)
     print("Third count: ", third_highest_count)
+'''
 
-   
+# Challenge #38
+# Top three Least Frequent Words
+
+sentence = input("Enter a sentence: ").lower()
+
+words = sentence.split()
+checked_words = []
+
+least_frequent_word = ""
+second_least_frequent_word = ""
+third_least_frequent_word = ""
+
+lowest_count = float('inf')
+second_lowest_count = float('inf')
+third_lowest_count = float('inf')
+
+for word in words:
+    if word not in checked_words:
+        count = 0
+
+        for check in words:
+            if word == check:
+                count = count + 1
+
+        if count < lowest_count:
+            third_lowest_count = second_lowest_count
+            second_lowest_count = lowest_count
+            lowest_count = count
+            third_least_frequent_word = second_least_frequent_word
+            second_least_frequent_word = least_frequent_word
+            least_frequent_word = word
+
+        elif count < second_lowest_count and count != lowest_count:
+            third_lowest_count = second_lowest_count
+            second_lowest_count = count
+            third_least_frequent_word = second_least_frequent_word
+            second_least_frequent_word = word
+
+        else:
+            if count < third_lowest_count and count != lowest_count and count != second_lowest_count:
+                third_lowest_count = count
+                third_least_frequent_word = word
+
+        checked_words.append(word)
+
+print("Least frequent word: ", least_frequent_word)
+print("Lowest count: ", lowest_count)
+
+if second_least_frequent_word == "":
+    print("No second least frequent word.")
+
+else:
+    print("Second Least frequent word: ", second_least_frequent_word)
+    print("Second lowest count: ", second_lowest_count)
+
+if third_least_frequent_word == "":
+    print("No third least frequent word.")
+
+else:
+    print("Third least frequent word: ", third_least_frequent_word)
+    print("Third lowest count:", third_lowest_count)
+
 
             
 
