@@ -1187,7 +1187,6 @@ if third_least_frequent_word == "":
 else:
     print("Third least frequent word: ", third_least_frequent_word)
     print("Third lowest count:", third_lowest_count)
-'''
 
 # Challenge #39
 # Most and Least Frequency word summary
@@ -1226,6 +1225,47 @@ print("Frequency: ", highest_count)
 
 print("Least frequent word: ", least_frequent)
 print("Frequency: ", lowest_count)
+'''
+# Challenge #40
+# Frequency Range 
+
+sentence = input("Enter a sentence: ").lower()
+
+words = sentence.split()
+checked_words = []
+
+most_frequent = ""
+least_frequent = ""
+
+highest_count = 0
+lowest_count = float('inf')
+
+for word in words:
+    if word not in checked_words:
+        count = 0
+
+        for check in words:
+            if word == check:
+                count = count + 1
+
+        if count > highest_count:
+            highest_count = count
+            most_frequent = word
+
+        if count < lowest_count:
+            lowest_count = count
+            least_frequent = word
+
+        checked_words.append(word)
+
+print("Most frequent word: ", most_frequent)
+print("Frequency: ", highest_count)
+
+print("Least frequent word: ", least_frequent)
+print("Frequency: ", lowest_count)
+
+frequency_difference = highest_count - lowest_count
+print("Frequency Difference: ", frequency_difference)
 
 
             
