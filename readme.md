@@ -36,4 +36,23 @@
         Anagrams
         Duplicate Characters
         Word Frequency
+
+
+### Level 4 - Dictionaries / Hash Maps
+        Creating Dictionaries 
+        Accessing Values
+        Adding/Updating Key-Value Pairs
+        Removing Key-Value Pairs
+        Checking Keys 
+        Traversing Dictionaries
+        Frequency Counting
+        Character Frequency
+        Word Frequency
+        Most/Least Frequent
+        Repeating/Non-Repeating
+        Frequency Ranking
+        Dictionary Lookup
+        Grouping Data
+        Hash Map Optimization
+        
         

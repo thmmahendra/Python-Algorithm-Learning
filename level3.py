@@ -5,7 +5,7 @@
     # Traverses the string.
     # Counts the characters manually.
     # Prints the final count.
-'''
+
 words = input("Enter the words: ")
 
 char_count = 0
@@ -1225,7 +1225,7 @@ print("Frequency: ", highest_count)
 
 print("Least frequent word: ", least_frequent)
 print("Frequency: ", lowest_count)
-'''
+
 # Challenge #40
 # Frequency Range 
 
