@@ -17,7 +17,7 @@ for num in numbers:
 
 print("Largest Number: ", largest)
 print("Smallest Number: ", smallest)
-'''
+
 
 # Review Challenge #2
 # Find Second Largest Number
@@ -43,6 +43,35 @@ if second_largest == float('-inf'):
 
 else:
     print("Second Largest Number: ", second_largest)
+'''
+
+# Review Challenge #3
+# Duplicate Value
+
+numbers = input("Enter the numbers: ").split()
+
+checked_numbers =[]
+found_duplicate = False
+
+for num in numbers:
+    if num not in checked_numbers:
+        count = 0
+
+        for check in numbers:
+            if num == check:
+                count = count + 1
+
+        if count > 1:
+            print(num)
+            found_duplicate = True
+
+        checked_numbers.append(num)
+
+if found_duplicate == False:
+    print("No duplicate values")
+
+
+
 
 
 
