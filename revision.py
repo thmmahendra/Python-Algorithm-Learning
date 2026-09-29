@@ -1,6 +1,6 @@
 # Review Challenge #1
 # Find Largest and smallest numbers
-'''
+
 numbers = input("Enter the numbers: ").split()
 
 largest = float('-inf')
@@ -68,7 +68,7 @@ for num in numbers:
 
 if found_duplicate == False:
     print("No duplicate values")
-'''
+
 
 # Review Challenge #4
 # Reverse String
