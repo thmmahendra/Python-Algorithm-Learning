@@ -43,7 +43,6 @@ if second_largest == float('-inf'):
 
 else:
     print("Second Largest Number: ", second_largest)
-'''
 
 # Review Challenge #3
 # Duplicate Value
@@ -69,7 +68,22 @@ for num in numbers:
 
 if found_duplicate == False:
     print("No duplicate values")
+'''
 
+# Review Challenge #4
+# Reverse String
+
+words = input("Enter a word: ")
+
+reversed_words = ""
+
+index = len(words) - 1
+
+while index >= 0:
+    reversed_words = reversed_words + words[index]
+    index = index - 1
+
+print(reversed_words)
 
 
 
