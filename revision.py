@@ -104,7 +104,7 @@ else:
 
         for check in first_word:
             if character == check:
-                first_word = first_word + 1
+                count_first = count_first + 1
 
         for check in seond_word:
             if character == check:
@@ -118,7 +118,7 @@ if are_anagrams:
     print("Anagrams")
 
 else:
-    print("Note Anagrams")
+    print("Not Anagrams")
 
 
 
