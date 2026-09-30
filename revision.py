@@ -1,6 +1,6 @@
 # Review Challenge #1
 # Find Largest and smallest numbers
-
+'''
 numbers = input("Enter the numbers: ").split()
 
 largest = float('-inf')
@@ -84,6 +84,55 @@ while index >= 0:
     index = index - 1
 
 print(reversed_words)
+'''
+
+# Review Challenge #5
+# Anagram Checker
+
+first_word = input("Enter a first word: ").lower()
+seond_word = input("Enter a second word: ").lower()
+
+if len(first_word) != len(seond_word):
+    are_anagrams = False
+
+else:
+    are_anagrams = True
+
+    for character in first_word:
+        count_first = 0
+        count_second = 0
+
+        for check in first_word:
+            if character == check:
+                first_word = first_word + 1
+
+        for check in seond_word:
+            if character == check:
+                count_second = count_second + 1
+
+        if count_first != count_second:
+            are_anagrams = False
+            break
+
+if are_anagrams:
+    print("Anagrams")
+
+else:
+    print("Note Anagrams")
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
 
 
 
