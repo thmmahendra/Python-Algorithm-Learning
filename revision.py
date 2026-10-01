@@ -1,6 +1,6 @@
 # Review Challenge #1
 # Find Largest and smallest numbers
-'''
+
 numbers = input("Enter the numbers: ").split()
 
 largest = float('-inf')
@@ -234,7 +234,6 @@ if second_most_frequent == "":
 else:
     print("Second most frequent word: ", second_most_frequent)
     print("Frequency: ", second_highest_count)
-'''
 
 # Review Challenge #9
 # Top three Most Frequent Word
@@ -297,6 +296,38 @@ if third_most_frequent == "":
 else:
     print("Third frequent word: ", third_most_frequent)
     print("Frequency: ", third_highest_count)
+
+# Review Challenge #10
+# Mixed Challenge: Longest Non-Repeating Word
+
+sentence = input("Enter a sentence: ").lower()
+
+words = sentence.split()
+
+longest_non_repeating = ""
+longest_length = 0
+
+for word in words:
+    count = 0
+
+    for check in words:
+        if word == check:
+            count = count + 1
+
+    if count == 1:
+        if len(word) > longest_length:
+            longest_length = len(word)
+            longest_non_repeating = word
+
+if longest_non_repeating == "":
+    print("No longest non repeating.")
+
+else:
+    print("Longest Non Repeating word: ", longest_non_repeating)
+    print("Length: ", longest_length)
+
+
+
         
 
 
