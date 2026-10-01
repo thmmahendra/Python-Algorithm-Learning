@@ -145,7 +145,6 @@ if first_non_repeating == "":
 else:
     print("First Non Repeating Word: ", first_non_repeating)
 
-'''
 
 # Review Challenge #7
 # Most + Least Frequent Word
@@ -192,7 +191,49 @@ if least_frequent == "":
 else:
     print("Least Frequent Word: ", least_frequent)
     print("Frequency: ", lowest_count)
+'''
 
+# Review Challenge #8
+# Most + Least Frequent Word
+
+sentence = input("Enter a sentence: ").lower()
+
+words = sentence.split()
+checked_words = []
+
+most_frequent = ""
+second_most_frequent = ""
+
+highest_count = 0
+second_highest_count = 0
+
+for word in words:
+    if word not in checked_words:
+        count = 0
+
+        for check in words:
+            if word == check:
+                count = count + 1
+
+        if count > highest_count:
+            second_highest_count = highest_count
+            highest_count = count
+            second_most_frequent = most_frequent
+            most_frequent = word
+
+        else:
+            if count > second_highest_count and count != highest_count:
+                second_highest_count = count
+                second_most_frequent = word
+
+        checked_words.append(word)
+
+if second_most_frequent == "":
+    print("No second most frequent word.")
+
+else:
+    print("Second most frequent word: ", second_most_frequent)
+    print("Frequency: ", second_highest_count)
 
 
 
