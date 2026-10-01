@@ -191,10 +191,10 @@ if least_frequent == "":
 else:
     print("Least Frequent Word: ", least_frequent)
     print("Frequency: ", lowest_count)
-'''
+
 
 # Review Challenge #8
-# Most + Least Frequent Word
+# Second Most Frequent Word
 
 sentence = input("Enter a sentence: ").lower()
 
@@ -234,9 +234,69 @@ if second_most_frequent == "":
 else:
     print("Second most frequent word: ", second_most_frequent)
     print("Frequency: ", second_highest_count)
+'''
 
+# Review Challenge #9
+# Top three Most Frequent Word
 
+sentence = input("Enter a sentence: ").lower()
 
+words = sentence.split()
+checked_words = []
+
+most_frequent = ""
+second_most_frequent = ""
+third_most_frequent = ""
+
+highest_count = 0
+second_highest_count = 0
+third_highest_count = 0
+
+for word in words:
+    if word not in checked_words:
+        count = 0
+
+        for check in words:
+            if word == check:
+                count = count + 1
+
+        if count > highest_count:
+            third_highest_count = second_highest_count
+            second_highest_count = highest_count
+            highest_count = count
+            third_most_frequent = second_most_frequent
+            second_most_frequent = most_frequent
+            most_frequent = word
+
+        elif count > second_highest_count and count != highest_count:
+            third_highest_count = second_highest_count
+            second_highest_count = count
+            third_most_frequent = second_most_frequent
+            second_most_frequent = word
+
+        else:
+            if count > third_highest_count and count != highest_count and count != second_highest_count:
+                third_highest_count = count
+                third_most_frequent = word
+
+        checked_words.append(word)
+
+print("Most Frequent word: ", most_frequent)
+print("Frequency: ", highest_count)
+
+if second_most_frequent == "":
+    print("No second most frequent word.")
+
+else:
+    print("Second frequent word: ", second_most_frequent)
+    print("Frequency: ", second_highest_count)
+
+if third_most_frequent == "":
+    print("No third most frequent word.")
+
+else:
+    print("Third frequent word: ", third_most_frequent)
+    print("Frequency: ", third_highest_count)
         
 
 
