@@ -84,7 +84,6 @@ while index >= 0:
     index = index - 1
 
 print(reversed_words)
-'''
 
 # Review Challenge #5
 # Anagram Checker
@@ -119,6 +118,37 @@ if are_anagrams:
 
 else:
     print("Not Anagrams")
+'''
+
+# Review Challenge #6
+# First Non-Repeating Word
+
+sentence = input("Enter a sentence: ").lower()
+
+words = sentence.split() 
+
+first_non_repeating = ""
+
+for word in words:
+    count = 0
+
+    for check in words:
+        if word == check:
+            count = count + 1
+
+    if count == 1:
+        first_non_repeating = word
+        break
+
+if first_non_repeating == "":
+    print("No non repeating words.")
+
+else:
+    print("First Non Repeating Word: ", first_non_repeating)
+
+
+
+
 
 
 
