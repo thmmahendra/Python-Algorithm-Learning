@@ -12,6 +12,9 @@ second_largest = float('-inf')
 smallest = float('inf')
 second_smallest= float('inf')
 
+checked_numbers = []
+found_duplicate = False
+
 for num in numbers:
     num = int(num)
 
@@ -37,6 +40,23 @@ for num in numbers:
 
 average = total_sum / total_number
 
+for num in numbers:
+    if num not in checked_numbers:
+        count = 0
+
+        for check in numbers:
+            if check == num:
+                count = count + 1
+
+        if count > 1:
+            print("Duplicate Values: ", num)
+            found_duplicate = True
+
+        checked_numbers.append(num)
+
+if found_duplicate == False:
+    print("No duplicate values.")
+
 print("Total Numbers: ", total_number)
 print("Total Sum: ", total_sum)
 print("Average: ", average)
@@ -56,4 +76,6 @@ if second_smallest == float('inf'):
 
 else:
     print("Second Smallest Number: ", second_smallest)
+
+
 
