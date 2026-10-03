@@ -1,5 +1,14 @@
 # Mini Project #1
 # Number Statistics Analyzer
+    # Total Numbers
+    # Sum
+    # Average
+    # Largest
+    # Smallest
+    # Second Largest distinct
+    # Second Smallest distinct
+    # Duplicate values
+    # Unique values
 
 numbers = input("Enter the numbers: ").split()
 
@@ -14,6 +23,9 @@ second_smallest= float('inf')
 
 checked_numbers = []
 found_duplicate = False
+
+unique_value = []
+found_unique = False
 
 for num in numbers:
     num = int(num)
@@ -52,7 +64,17 @@ for num in numbers:
             print("Duplicate Values: ", num)
             found_duplicate = True
 
+        if count == 1:
+            unique_value.append(num)
+            found_unique = True
+
         checked_numbers.append(num)
+
+for value in unique_value:
+    print("Unique values: ", value)
+
+if found_unique == False:
+    print("No unique values.")
 
 if found_duplicate == False:
     print("No duplicate values.")
