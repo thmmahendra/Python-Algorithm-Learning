@@ -1,5 +1,10 @@
 # Mini Project #2
 # Text Analysis Tool
+    # Total words + Total Characters
+    # Longest + Shortest Word
+    # Most + Least Frequent Word
+    # Repeating + Non repeating word
+    # Final Text Summary
 
 sentence = input("Enter a sentence: ").lower()
 
@@ -17,6 +22,9 @@ least_frequent = ""
 
 highest_count = 0
 lowest_count = float('inf')
+
+repeating_words = []
+non_repeating_words = []
 
 for word in words:
     total_words = total_words + 1
@@ -50,6 +58,12 @@ for word in words:
 
         checked_words.append(word)
 
+        if count > 1:
+            repeating_words.append(word)
+
+        if count == 1:
+            non_repeating_words.append(word)
+
 print("Longest Word: ", longest_word)
 print("Shortest Word: ", shortest_word)
 
@@ -62,4 +76,17 @@ print("Frequency: ", highest_count)
 print("Least Frequent Word: ", least_frequent)
 print("Frequency: ", lowest_count)
 
+if not repeating_words:
+    print("No repeating words.")
+
+else:
+    for word in repeating_words:
+        print("Repeating word: ", word)
+
+if not non_repeating_words:
+    print("No non-repeating words.")
+
+else:
+    for word in non_repeating_words:
+        print("Non repeating word: ", word)
 
