@@ -40,6 +40,8 @@ for word in words:
         if len(word) < len(shortest_word):
             shortest_word = word
 
+average_word_length = total_character / total_words
+
 for word in words:
     if word not in checked_words:
         count = 0
@@ -64,8 +66,11 @@ for word in words:
         if count == 1:
             non_repeating_words.append(word)
 
-print("Longest Word: ", longest_word)
+print("\n-----TEXT ANALYSIS------")
+
+print("\nLongest Word: ", longest_word)
 print("Shortest Word: ", shortest_word)
+print("Average Word Length: ", average_word_length)
 
 print("Total Words: ", total_words)
 print("Total Character: ", total_character)
@@ -80,13 +85,17 @@ if not repeating_words:
     print("No repeating words.")
 
 else:
+    print("\nRepeating word: ")
+
     for word in repeating_words:
-        print("Repeating word: ", word)
+        print(word)
 
 if not non_repeating_words:
     print("No non-repeating words.")
 
 else:
+    print("\nNon repeating word: ")
+
     for word in non_repeating_words:
-        print("Non repeating word: ", word)
+        print(word)
 
