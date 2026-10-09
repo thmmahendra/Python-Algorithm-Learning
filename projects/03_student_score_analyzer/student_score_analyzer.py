@@ -41,6 +41,8 @@ for score in scores:
 
 average = total_scores / total_students
 
+pass_percentage = (passed_students / total_students) * 100
+
 for score in scores:
     score = int(score)
 
@@ -54,18 +56,21 @@ for score in scores:
         if score == average:
             equal_average = equal_average + 1
 
-print("Total Students: ", total_students)
-print("Total Scores: ", total_scores)
-print("Average: ", average)
+print("\n-----STUDENT SCORE ANALYSIS------")
 
-print("Highest Score: ", highest_score)
+print("\nTotal Students: ", total_students)
+print("Total Scores: ", total_scores)
+print("Average Score: ", average)
+
+print("\nHighest Score: ", highest_score)
 print("Lowest Score: ", lowest_score)
 
-print("Passed Students: ", passed_students)
+print("\nPassed Students: ", passed_students)
 print("Failed Students: ", failed_students)
+print("Pass Percentage: ", pass_percentage, "%")
 
-print("Above: ", above_average)
-print("Below: ", below_average)
+print("\nAbove Average: ", above_average)
+print("Below Average: ", below_average)
 print("Equal to Average: ", equal_average)
 
 
