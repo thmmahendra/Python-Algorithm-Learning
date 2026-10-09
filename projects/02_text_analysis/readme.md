@@ -10,23 +10,23 @@ loops, conditions, lists, and frequency counting.
 
 ## Project Requirements
 
-    - Count the total words.
-    - Count characters, with the treatment of spaces clearly defined.
-    - Find the longest and shortest words.
-    - Find the most and least frequent words.
-    - Identify repeating words.
-    - Identify words that occur exactly once.
-    - Display each result clearly.
+- Count the total words.
+- Count characters, with the treatment of spaces clearly defined.
+- Find the longest and shortest words.
+- Find the most and least frequent words.
+- Identify repeating words.
+- Identify words that occur exactly once.
+- Display each result clearly.
 
 ## Concepts Practised
 
-    - Reading user input
-    - Converting text to lowercase
-    - Splitting a sentence into words
-    - Loops and conditional statements
-    - Counters and comparisons
-    - Frequency counting
-    - Avoiding duplicate output using a list
+- Reading user input
+- Converting text to lowercase
+- Splitting a sentence into words
+- Loops and conditional statements
+- Counters and comparisons
+- Frequency counting
+- Avoiding duplicate output using a list
 
 ## Requirements
 
@@ -74,32 +74,32 @@ Document which character-counting rule the program uses.
 
 ## Text-Processing Rules
 
-    - Convert input to lowercase before comparing words.
-    - Split words using whitespace.
-    - Punctuation remains attached to words unless explicitly removed.
-         For example, `python` and `python!` are different words.
-    - State how the program handles ties for length and frequency.
+- Convert input to lowercase before comparing words.
+- Split words using whitespace.
+- Punctuation remains attached to words unless explicitly removed.
+    For example, `python` and `python!` are different words.
+- State how the program handles ties for length and frequency.
 
 ## Cases to Check
 
-    - An empty sentence
-    - Only spaces
-    - A single word
-    - All words being the same
-    - All words occurring once
-    - Mixed uppercase and lowercase
-    - Multiple spaces between words
-    - Words with punctuation
-    - Ties in word length or frequency
+- An empty sentence
+- Only spaces
+- A single word
+- All words being the same
+- All words occurring once
+- Mixed uppercase and lowercase
+- Multiple spaces between words
+- Words with punctuation
+- Ties in word length or frequency
 
 ## Learning Reflection
 
 After completing the project, record:
 
-    - What I learned
-    - Mistakes I corrected
-    - Limitations of the program
-    - Time and space complexity
+- What I learned
+- Mistakes I corrected
+- Limitations of the program
+- Time and space complexity
 
 ## Course Sequence
 
