@@ -17,6 +17,10 @@ lowest_score = float('inf')
 passed_students = 0
 failed_students = 0
 
+above_average = 0
+below_average = 0
+equal_average = 0
+
 for score in scores:
     score = int(score)
 
@@ -37,6 +41,19 @@ for score in scores:
 
 average = total_scores / total_students
 
+for score in scores:
+    score = int(score)
+
+    if score > average:
+        above_average = above_average + 1
+
+    if score < average:
+        below_average = below_average + 1
+
+    else:
+        if score == average:
+            equal_average = equal_average + 1
+
 print("Total Students: ", total_students)
 print("Total Scores: ", total_scores)
 print("Average: ", average)
@@ -47,6 +64,9 @@ print("Lowest Score: ", lowest_score)
 print("Passed Students: ", passed_students)
 print("Failed Students: ", failed_students)
 
+print("Above: ", above_average)
+print("Below: ", below_average)
+print("Equal to Average: ", equal_average)
 
 
 
