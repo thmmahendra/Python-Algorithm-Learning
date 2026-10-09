@@ -8,21 +8,21 @@ Build a Python program that analyses user-entered numbers using loops, condition
 
 ## Project Requirments:
 
-    - Count the total numbers entered.
-    - Calculate their sum and average.
-    - Find the largest and smallest numnbers.
-    - Find the second-largest and second-smallest distinct numbers.
-    - Identify duplicate values.
-    - Identify values that occur exctly one.
+- Count the total numbers entered.
+- Calculate their sum and average.
+- Find the largest and smallest numnbers.
+- Find the second-largest and second-smallest distinct numbers.
+- Identify duplicate values.
+- Identify values that occur exctly one.
 
 ## Concepts Practised
 
-    - Reading and splitting user input.
-    - Converting input into numbers.
-    - Loops and conditions statments.
-    - Counters and running totals.
-    - Tracking largest and smallest values.
-    - Lists and duplicates detection
+- Reading and splitting user input.
+- Converting input into numbers.
+- Loops and conditions statments.
+- Counters and running totals.
+- Tracking largest and smallest values.
+- Lists and duplicates detection
 
 ## How to run
 
@@ -58,17 +58,17 @@ finding the second-largest or second-smallest number.
 
 ## Cases to Check
 
-    - Numbers containing duplicates
-    - All numbers being the same
-        - Negative numbers and zero
-    - Only one number
-    - Empty input
+- Numbers containing duplicates
+- All numbers being the same
+    - Negative numbers and zero
+- Only one number
+- Empty input
 
 ## Learning Reflection
 
 After completing the project, record:
-    - What I learned
-    - Mistakes I corrected
-    - Inputs the program does not yet handle
-    - Time and space complexity
+- What I learned
+- Mistakes I corrected
+- Inputs the program does not yet handle
+- Time and space complexity
 
