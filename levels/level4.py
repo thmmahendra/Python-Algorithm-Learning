@@ -8,7 +8,6 @@ student = {
 }
 
 print(student)
-'''
 
 # Challenge #2
 # Accessing Dictionary Values
@@ -22,4 +21,18 @@ student = {
 print("Name: ", student["name"])
 print("Age: ", student["age"])
 print("Score: ", student["score"])
+'''
+
+# Challenge #3
+# Adding a New Key-value Pair
+
+student = {
+    "name": "Mahendra",
+    "age": 25,
+    "score": 90
+}
+
+student["city"] = "Kathmandu"
+
+print(student)
 
