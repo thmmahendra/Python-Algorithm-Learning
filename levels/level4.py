@@ -21,7 +21,6 @@ student = {
 print("Name: ", student["name"])
 print("Age: ", student["age"])
 print("Score: ", student["score"])
-'''
 
 # Challenge #3
 # Adding a New Key-value Pair
@@ -33,6 +32,21 @@ student = {
 }
 
 student["city"] = "Kathmandu"
+
+print(student)
+'''
+
+# Challenge #4
+# Updating an Existing Value
+
+student = {
+    "name": "Mahendra",
+    "age": 25,
+    "score": 90,
+    "city": "Kathmandu"
+}
+
+student["score"] = 95
 
 print(student)
 
