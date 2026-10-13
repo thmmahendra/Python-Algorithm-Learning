@@ -48,7 +48,6 @@ student = {
 student["score"] = 95
 
 print(student)
-'''
 
 # Challenge #5
 # Removing a Key-value Pair
@@ -63,3 +62,19 @@ student = {
 del student["city"]
 
 print(student)
+'''
+
+# Challenge #6
+# Checking Whether a Key exists
+
+student = {
+    "name": "Mahendra",
+    "age": 25,
+    "score": 90
+}
+
+if "city" in student:
+    print("City Exists")
+
+else:
+    print("City does not exists")
