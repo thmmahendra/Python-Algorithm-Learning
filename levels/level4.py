@@ -34,7 +34,6 @@ student = {
 student["city"] = "Kathmandu"
 
 print(student)
-'''
 
 # Challenge #4
 # Updating an Existing Value
@@ -49,4 +48,18 @@ student = {
 student["score"] = 95
 
 print(student)
+'''
 
+# Challenge #5
+# Removing a Key-value Pair
+
+student = {
+    "name": "Mahendra",
+    "age": 25,
+    "score": 90,
+    "city": "Kathmandu"
+}
+
+del student["city"]
+
+print(student)
