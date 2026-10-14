@@ -62,7 +62,6 @@ student = {
 del student["city"]
 
 print(student)
-'''
 
 # Challenge #6
 # Checking Whether a Key exists
@@ -78,3 +77,24 @@ if "city" in student:
 
 else:
     print("City does not exists")
+'''
+
+# Challenge #7
+# Word Frequency Using a Dictionary
+
+sentence = input("Enter a sentence: ").lower()
+
+words = sentence.split()
+
+frequency = {}
+
+for word in words:
+    if word in frequency:
+        frequency[word] = frequency[word] + 1
+
+    else:
+        frequency[word] = 1
+
+print(frequency)
+
+
